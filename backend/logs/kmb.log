@@ -1,0 +1,528 @@
+2026-06-06 10:02:35,627 [INFO] kmb: Database integrity check passed
+2026-06-06 10:02:35,628 [INFO] kmb: KMB backend started
+2026-06-06 10:02:54,759 [INFO] kmb: login_success
+2026-06-06 10:04:52,739 [INFO] kmb: login_success
+2026-06-06 10:06:47,101 [INFO] kmb: logout
+2026-06-06 10:06:50,218 [INFO] kmb: login_success
+2026-06-06 10:08:55,847 [INFO] kmb: chat_created — й
+2026-06-06 10:08:59,518 [INFO] kmb: chat_created — работа
+2026-06-06 10:09:41,119 [INFO] kmb: logout
+2026-06-06 10:09:42,309 [INFO] kmb: login_success
+2026-06-06 10:13:36,877 [INFO] kmb: chat_created — лучший чат
+2026-06-06 10:14:43,161 [INFO] kmb: logout
+2026-06-06 10:14:46,642 [INFO] kmb: login_success
+2026-06-06 10:15:44,801 [WARNING] kmb: login_failed — kemerov
+2026-06-06 10:15:53,553 [WARNING] kmb: login_failed — kemerov
+2026-06-06 10:17:20,822 [WARNING] kmb: login_failed — kemerov
+2026-06-06 10:17:24,978 [INFO] kmb: login_success
+2026-06-06 10:19:48,808 [INFO] kmb: logout
+2026-06-06 10:21:43,697 [INFO] kmb: login_success
+2026-06-06 10:24:41,235 [INFO] kmb: login_success
+2026-06-06 10:24:54,039 [INFO] kmb: login_success
+2026-06-06 10:25:31,297 [INFO] kmb: login_success
+2026-06-06 10:26:46,598 [INFO] kmb: login_success
+2026-06-06 10:26:49,363 [INFO] kmb: login_success
+2026-06-06 10:27:12,395 [INFO] kmb: login_success
+2026-06-06 10:27:19,076 [INFO] kmb: login_success
+2026-06-06 10:34:51,976 [ERROR] kmb: Database integrity check failed: (psycopg2.errors.UndefinedColumn) column messages.file_url does not exist
+LINE 2: ...messages_user_id, messages.text AS messages_text, messages.f...
+                                                             ^
+
+[SQL: SELECT count(*) AS count_1 
+FROM (SELECT messages.id AS messages_id, messages.chat_id AS messages_chat_id, messages.user_id AS messages_user_id, messages.text AS messages_text, messages.file_url AS messages_file_url, messages.file_name AS messages_file_name, messages.created_at AS messages_created_at, messages.status AS messages_status 
+FROM messages LEFT OUTER JOIN chat_members ON chat_members.chat_id = messages.chat_id AND chat_members.user_id = messages.user_id 
+WHERE chat_members.id IS NULL) AS anon_1]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-06 10:34:51,977 [INFO] kmb: KMB backend started
+2026-06-06 10:34:58,269 [INFO] kmb: login_success
+2026-06-06 10:35:04,818 [INFO] kmb: login_success
+2026-06-06 10:35:06,452 [ERROR] kmb: Unhandled error on /messages/1: (psycopg2.errors.UndefinedColumn) column messages.file_url does not exist
+LINE 1: ...messages_user_id, messages.text AS messages_text, messages.f...
+                                                             ^
+
+[SQL: SELECT messages.id AS messages_id, messages.chat_id AS messages_chat_id, messages.user_id AS messages_user_id, messages.text AS messages_text, messages.file_url AS messages_file_url, messages.file_name AS messages_file_name, messages.created_at AS messages_created_at, messages.status AS messages_status 
+FROM messages 
+WHERE messages.chat_id = %(chat_id_1)s ORDER BY messages.created_at ASC]
+[parameters: {'chat_id_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-06 10:35:06,597 [ERROR] kmb: Unhandled error on /messages/1: (psycopg2.errors.UndefinedColumn) column messages.file_url does not exist
+LINE 1: ...messages_user_id, messages.text AS messages_text, messages.f...
+                                                             ^
+
+[SQL: SELECT messages.id AS messages_id, messages.chat_id AS messages_chat_id, messages.user_id AS messages_user_id, messages.text AS messages_text, messages.file_url AS messages_file_url, messages.file_name AS messages_file_name, messages.created_at AS messages_created_at, messages.status AS messages_status 
+FROM messages 
+WHERE messages.chat_id = %(chat_id_1)s ORDER BY messages.created_at ASC]
+[parameters: {'chat_id_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-06 10:35:06,621 [ERROR] kmb: Unhandled error on /messages/1: (psycopg2.errors.UndefinedColumn) column messages.file_url does not exist
+LINE 1: ...messages_user_id, messages.text AS messages_text, messages.f...
+                                                             ^
+
+[SQL: SELECT messages.id AS messages_id, messages.chat_id AS messages_chat_id, messages.user_id AS messages_user_id, messages.text AS messages_text, messages.file_url AS messages_file_url, messages.file_name AS messages_file_name, messages.created_at AS messages_created_at, messages.status AS messages_status 
+FROM messages 
+WHERE messages.chat_id = %(chat_id_1)s ORDER BY messages.created_at ASC]
+[parameters: {'chat_id_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-06 10:35:10,294 [ERROR] kmb: Unhandled error on /messages/13: (psycopg2.errors.UndefinedColumn) column messages.file_url does not exist
+LINE 1: ...messages_user_id, messages.text AS messages_text, messages.f...
+                                                             ^
+
+[SQL: SELECT messages.id AS messages_id, messages.chat_id AS messages_chat_id, messages.user_id AS messages_user_id, messages.text AS messages_text, messages.file_url AS messages_file_url, messages.file_name AS messages_file_name, messages.created_at AS messages_created_at, messages.status AS messages_status 
+FROM messages 
+WHERE messages.chat_id = %(chat_id_1)s ORDER BY messages.created_at ASC]
+[parameters: {'chat_id_1': 13}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-06 10:35:10,314 [ERROR] kmb: Unhandled error on /messages/13: (psycopg2.errors.UndefinedColumn) column messages.file_url does not exist
+LINE 1: ...messages_user_id, messages.text AS messages_text, messages.f...
+                                                             ^
+
+[SQL: SELECT messages.id AS messages_id, messages.chat_id AS messages_chat_id, messages.user_id AS messages_user_id, messages.text AS messages_text, messages.file_url AS messages_file_url, messages.file_name AS messages_file_name, messages.created_at AS messages_created_at, messages.status AS messages_status 
+FROM messages 
+WHERE messages.chat_id = %(chat_id_1)s ORDER BY messages.created_at ASC]
+[parameters: {'chat_id_1': 13}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-06 10:35:10,332 [ERROR] kmb: Unhandled error on /messages/13: (psycopg2.errors.UndefinedColumn) column messages.file_url does not exist
+LINE 1: ...messages_user_id, messages.text AS messages_text, messages.f...
+                                                             ^
+
+[SQL: SELECT messages.id AS messages_id, messages.chat_id AS messages_chat_id, messages.user_id AS messages_user_id, messages.text AS messages_text, messages.file_url AS messages_file_url, messages.file_name AS messages_file_name, messages.created_at AS messages_created_at, messages.status AS messages_status 
+FROM messages 
+WHERE messages.chat_id = %(chat_id_1)s ORDER BY messages.created_at ASC]
+[parameters: {'chat_id_1': 13}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-06 10:35:58,300 [ERROR] kmb: Unhandled error on /messages/13: (psycopg2.errors.UndefinedColumn) column messages.file_url does not exist
+LINE 1: ...messages_user_id, messages.text AS messages_text, messages.f...
+                                                             ^
+
+[SQL: SELECT messages.id AS messages_id, messages.chat_id AS messages_chat_id, messages.user_id AS messages_user_id, messages.text AS messages_text, messages.file_url AS messages_file_url, messages.file_name AS messages_file_name, messages.created_at AS messages_created_at, messages.status AS messages_status 
+FROM messages 
+WHERE messages.chat_id = %(chat_id_1)s ORDER BY messages.created_at ASC]
+[parameters: {'chat_id_1': 13}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-06 10:35:58,333 [ERROR] kmb: Unhandled error on /messages/13: (psycopg2.errors.UndefinedColumn) column messages.file_url does not exist
+LINE 1: ...messages_user_id, messages.text AS messages_text, messages.f...
+                                                             ^
+
+[SQL: SELECT messages.id AS messages_id, messages.chat_id AS messages_chat_id, messages.user_id AS messages_user_id, messages.text AS messages_text, messages.file_url AS messages_file_url, messages.file_name AS messages_file_name, messages.created_at AS messages_created_at, messages.status AS messages_status 
+FROM messages 
+WHERE messages.chat_id = %(chat_id_1)s ORDER BY messages.created_at ASC]
+[parameters: {'chat_id_1': 13}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-06 10:35:58,353 [ERROR] kmb: Unhandled error on /messages/13: (psycopg2.errors.UndefinedColumn) column messages.file_url does not exist
+LINE 1: ...messages_user_id, messages.text AS messages_text, messages.f...
+                                                             ^
+
+[SQL: SELECT messages.id AS messages_id, messages.chat_id AS messages_chat_id, messages.user_id AS messages_user_id, messages.text AS messages_text, messages.file_url AS messages_file_url, messages.file_name AS messages_file_name, messages.created_at AS messages_created_at, messages.status AS messages_status 
+FROM messages 
+WHERE messages.chat_id = %(chat_id_1)s ORDER BY messages.created_at ASC]
+[parameters: {'chat_id_1': 13}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-06 10:36:07,507 [ERROR] kmb: Unhandled error on /messages/1: (psycopg2.errors.UndefinedColumn) column messages.file_url does not exist
+LINE 1: ...messages_user_id, messages.text AS messages_text, messages.f...
+                                                             ^
+
+[SQL: SELECT messages.id AS messages_id, messages.chat_id AS messages_chat_id, messages.user_id AS messages_user_id, messages.text AS messages_text, messages.file_url AS messages_file_url, messages.file_name AS messages_file_name, messages.created_at AS messages_created_at, messages.status AS messages_status 
+FROM messages 
+WHERE messages.chat_id = %(chat_id_1)s ORDER BY messages.created_at ASC]
+[parameters: {'chat_id_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-06 10:36:07,550 [ERROR] kmb: Unhandled error on /messages/1: (psycopg2.errors.UndefinedColumn) column messages.file_url does not exist
+LINE 1: ...messages_user_id, messages.text AS messages_text, messages.f...
+                                                             ^
+
+[SQL: SELECT messages.id AS messages_id, messages.chat_id AS messages_chat_id, messages.user_id AS messages_user_id, messages.text AS messages_text, messages.file_url AS messages_file_url, messages.file_name AS messages_file_name, messages.created_at AS messages_created_at, messages.status AS messages_status 
+FROM messages 
+WHERE messages.chat_id = %(chat_id_1)s ORDER BY messages.created_at ASC]
+[parameters: {'chat_id_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-06 10:36:07,586 [ERROR] kmb: Unhandled error on /messages/1: (psycopg2.errors.UndefinedColumn) column messages.file_url does not exist
+LINE 1: ...messages_user_id, messages.text AS messages_text, messages.f...
+                                                             ^
+
+[SQL: SELECT messages.id AS messages_id, messages.chat_id AS messages_chat_id, messages.user_id AS messages_user_id, messages.text AS messages_text, messages.file_url AS messages_file_url, messages.file_name AS messages_file_name, messages.created_at AS messages_created_at, messages.status AS messages_status 
+FROM messages 
+WHERE messages.chat_id = %(chat_id_1)s ORDER BY messages.created_at ASC]
+[parameters: {'chat_id_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-06 10:36:10,558 [ERROR] kmb: Unhandled error on /messages/: (psycopg2.errors.UndefinedColumn) column "file_url" of relation "messages" does not exist
+LINE 1: INSERT INTO messages (chat_id, user_id, text, file_url, file...
+                                                      ^
+
+[SQL: INSERT INTO messages (chat_id, user_id, text, file_url, file_name, created_at, status) VALUES (%(chat_id)s, %(user_id)s, %(text)s, %(file_url)s, %(file_name)s, %(created_at)s, %(status)s) RETURNING messages.id]
+[parameters: {'chat_id': 1, 'user_id': 1, 'text': 'что', 'file_url': None, 'file_name': None, 'created_at': datetime.datetime(2026, 6, 6, 10, 36, 10, 556707), 'status': 'sent'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-06 10:36:10,590 [ERROR] kmb: Unhandled error on /messages/: (psycopg2.errors.UndefinedColumn) column "file_url" of relation "messages" does not exist
+LINE 1: INSERT INTO messages (chat_id, user_id, text, file_url, file...
+                                                      ^
+
+[SQL: INSERT INTO messages (chat_id, user_id, text, file_url, file_name, created_at, status) VALUES (%(chat_id)s, %(user_id)s, %(text)s, %(file_url)s, %(file_name)s, %(created_at)s, %(status)s) RETURNING messages.id]
+[parameters: {'chat_id': 1, 'user_id': 1, 'text': 'что', 'file_url': None, 'file_name': None, 'created_at': datetime.datetime(2026, 6, 6, 10, 36, 10, 589141), 'status': 'sent'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-06 10:36:13,632 [ERROR] kmb: Unhandled error on /messages/: (psycopg2.errors.UndefinedColumn) column "file_url" of relation "messages" does not exist
+LINE 1: INSERT INTO messages (chat_id, user_id, text, file_url, file...
+                                                      ^
+
+[SQL: INSERT INTO messages (chat_id, user_id, text, file_url, file_name, created_at, status) VALUES (%(chat_id)s, %(user_id)s, %(text)s, %(file_url)s, %(file_name)s, %(created_at)s, %(status)s) RETURNING messages.id]
+[parameters: {'chat_id': 1, 'user_id': 1, 'text': 'что', 'file_url': None, 'file_name': None, 'created_at': datetime.datetime(2026, 6, 6, 10, 36, 13, 630356), 'status': 'sent'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-06 10:36:18,249 [ERROR] kmb: Unhandled error on /messages/13: (psycopg2.errors.UndefinedColumn) column messages.file_url does not exist
+LINE 1: ...messages_user_id, messages.text AS messages_text, messages.f...
+                                                             ^
+
+[SQL: SELECT messages.id AS messages_id, messages.chat_id AS messages_chat_id, messages.user_id AS messages_user_id, messages.text AS messages_text, messages.file_url AS messages_file_url, messages.file_name AS messages_file_name, messages.created_at AS messages_created_at, messages.status AS messages_status 
+FROM messages 
+WHERE messages.chat_id = %(chat_id_1)s ORDER BY messages.created_at ASC]
+[parameters: {'chat_id_1': 13}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-06 10:36:18,282 [ERROR] kmb: Unhandled error on /messages/13: (psycopg2.errors.UndefinedColumn) column messages.file_url does not exist
+LINE 1: ...messages_user_id, messages.text AS messages_text, messages.f...
+                                                             ^
+
+[SQL: SELECT messages.id AS messages_id, messages.chat_id AS messages_chat_id, messages.user_id AS messages_user_id, messages.text AS messages_text, messages.file_url AS messages_file_url, messages.file_name AS messages_file_name, messages.created_at AS messages_created_at, messages.status AS messages_status 
+FROM messages 
+WHERE messages.chat_id = %(chat_id_1)s ORDER BY messages.created_at ASC]
+[parameters: {'chat_id_1': 13}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-06 10:36:18,308 [ERROR] kmb: Unhandled error on /messages/13: (psycopg2.errors.UndefinedColumn) column messages.file_url does not exist
+LINE 1: ...messages_user_id, messages.text AS messages_text, messages.f...
+                                                             ^
+
+[SQL: SELECT messages.id AS messages_id, messages.chat_id AS messages_chat_id, messages.user_id AS messages_user_id, messages.text AS messages_text, messages.file_url AS messages_file_url, messages.file_name AS messages_file_name, messages.created_at AS messages_created_at, messages.status AS messages_status 
+FROM messages 
+WHERE messages.chat_id = %(chat_id_1)s ORDER BY messages.created_at ASC]
+[parameters: {'chat_id_1': 13}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-06 10:36:18,695 [ERROR] kmb: Unhandled error on /messages/: (psycopg2.errors.UndefinedColumn) column "file_url" of relation "messages" does not exist
+LINE 1: INSERT INTO messages (chat_id, user_id, text, file_url, file...
+                                                      ^
+
+[SQL: INSERT INTO messages (chat_id, user_id, text, file_url, file_name, created_at, status) VALUES (%(chat_id)s, %(user_id)s, %(text)s, %(file_url)s, %(file_name)s, %(created_at)s, %(status)s) RETURNING messages.id]
+[parameters: {'chat_id': 1, 'user_id': 1, 'text': 'что', 'file_url': None, 'file_name': None, 'created_at': datetime.datetime(2026, 6, 6, 10, 36, 18, 693649), 'status': 'sent'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-06 10:36:22,069 [ERROR] kmb: Unhandled error on /messages/5: (psycopg2.errors.UndefinedColumn) column messages.file_url does not exist
+LINE 1: ...messages_user_id, messages.text AS messages_text, messages.f...
+                                                             ^
+
+[SQL: SELECT messages.id AS messages_id, messages.chat_id AS messages_chat_id, messages.user_id AS messages_user_id, messages.text AS messages_text, messages.file_url AS messages_file_url, messages.file_name AS messages_file_name, messages.created_at AS messages_created_at, messages.status AS messages_status 
+FROM messages 
+WHERE messages.chat_id = %(chat_id_1)s ORDER BY messages.created_at ASC]
+[parameters: {'chat_id_1': 5}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-06 10:36:22,100 [ERROR] kmb: Unhandled error on /messages/5: (psycopg2.errors.UndefinedColumn) column messages.file_url does not exist
+LINE 1: ...messages_user_id, messages.text AS messages_text, messages.f...
+                                                             ^
+
+[SQL: SELECT messages.id AS messages_id, messages.chat_id AS messages_chat_id, messages.user_id AS messages_user_id, messages.text AS messages_text, messages.file_url AS messages_file_url, messages.file_name AS messages_file_name, messages.created_at AS messages_created_at, messages.status AS messages_status 
+FROM messages 
+WHERE messages.chat_id = %(chat_id_1)s ORDER BY messages.created_at ASC]
+[parameters: {'chat_id_1': 5}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-06 10:36:22,119 [ERROR] kmb: Unhandled error on /messages/5: (psycopg2.errors.UndefinedColumn) column messages.file_url does not exist
+LINE 1: ...messages_user_id, messages.text AS messages_text, messages.f...
+                                                             ^
+
+[SQL: SELECT messages.id AS messages_id, messages.chat_id AS messages_chat_id, messages.user_id AS messages_user_id, messages.text AS messages_text, messages.file_url AS messages_file_url, messages.file_name AS messages_file_name, messages.created_at AS messages_created_at, messages.status AS messages_status 
+FROM messages 
+WHERE messages.chat_id = %(chat_id_1)s ORDER BY messages.created_at ASC]
+[parameters: {'chat_id_1': 5}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-06 10:37:01,153 [INFO] kmb: login_success
+2026-06-06 10:37:13,276 [INFO] kmb: password_changed
+2026-06-06 10:37:17,235 [INFO] kmb: logout
+2026-06-06 10:37:21,029 [WARNING] kmb: login_failed — useruser4@test.com
+2026-06-06 10:37:23,621 [WARNING] kmb: login_failed — useruser4@test.com
+2026-06-06 10:37:26,023 [WARNING] kmb: login_failed — useruser4@test.com
+2026-06-06 10:37:28,693 [INFO] kmb: login_success
+2026-06-06 10:37:31,285 [ERROR] kmb: Unhandled error on /messages/5: (psycopg2.errors.UndefinedColumn) column messages.file_url does not exist
+LINE 1: ...messages_user_id, messages.text AS messages_text, messages.f...
+                                                             ^
+
+[SQL: SELECT messages.id AS messages_id, messages.chat_id AS messages_chat_id, messages.user_id AS messages_user_id, messages.text AS messages_text, messages.file_url AS messages_file_url, messages.file_name AS messages_file_name, messages.created_at AS messages_created_at, messages.status AS messages_status 
+FROM messages 
+WHERE messages.chat_id = %(chat_id_1)s ORDER BY messages.created_at ASC]
+[parameters: {'chat_id_1': 5}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-06 10:37:31,321 [ERROR] kmb: Unhandled error on /messages/5: (psycopg2.errors.UndefinedColumn) column messages.file_url does not exist
+LINE 1: ...messages_user_id, messages.text AS messages_text, messages.f...
+                                                             ^
+
+[SQL: SELECT messages.id AS messages_id, messages.chat_id AS messages_chat_id, messages.user_id AS messages_user_id, messages.text AS messages_text, messages.file_url AS messages_file_url, messages.file_name AS messages_file_name, messages.created_at AS messages_created_at, messages.status AS messages_status 
+FROM messages 
+WHERE messages.chat_id = %(chat_id_1)s ORDER BY messages.created_at ASC]
+[parameters: {'chat_id_1': 5}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-06 10:37:31,347 [ERROR] kmb: Unhandled error on /messages/5: (psycopg2.errors.UndefinedColumn) column messages.file_url does not exist
+LINE 1: ...messages_user_id, messages.text AS messages_text, messages.f...
+                                                             ^
+
+[SQL: SELECT messages.id AS messages_id, messages.chat_id AS messages_chat_id, messages.user_id AS messages_user_id, messages.text AS messages_text, messages.file_url AS messages_file_url, messages.file_name AS messages_file_name, messages.created_at AS messages_created_at, messages.status AS messages_status 
+FROM messages 
+WHERE messages.chat_id = %(chat_id_1)s ORDER BY messages.created_at ASC]
+[parameters: {'chat_id_1': 5}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-06 10:40:07,244 [ERROR] kmb: Database integrity check failed: (psycopg2.errors.UndefinedColumn) column messages.file_url does not exist
+LINE 2: ...messages_user_id, messages.text AS messages_text, messages.f...
+                                                             ^
+
+[SQL: SELECT count(*) AS count_1 
+FROM (SELECT messages.id AS messages_id, messages.chat_id AS messages_chat_id, messages.user_id AS messages_user_id, messages.text AS messages_text, messages.file_url AS messages_file_url, messages.file_name AS messages_file_name, messages.created_at AS messages_created_at, messages.status AS messages_status 
+FROM messages LEFT OUTER JOIN chat_members ON chat_members.chat_id = messages.chat_id AND chat_members.user_id = messages.user_id 
+WHERE chat_members.id IS NULL) AS anon_1]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-06-06 10:40:07,245 [INFO] kmb: KMB backend started
+2026-06-06 10:40:28,149 [INFO] kmb: login_success
+2026-06-06 10:41:38,496 [INFO] kmb: Database integrity check passed
+2026-06-06 10:41:38,497 [INFO] kmb: KMB backend started
+2026-06-06 10:42:22,833 [INFO] kmb: Database integrity check passed
+2026-06-06 10:42:22,834 [INFO] kmb: KMB backend started
+2026-06-06 10:42:41,245 [INFO] kmb: login_success
+2026-06-06 10:43:06,582 [INFO] kmb: direct_chat_created — sanya3
+2026-06-06 10:43:43,241 [INFO] kmb: password_changed
+2026-06-06 10:44:09,970 [INFO] kmb: chat_created — беседа
+2026-06-06 10:44:34,594 [INFO] kmb: member_added — sanya3
+2026-06-06 10:44:41,174 [INFO] kmb: member_removed — 2
+2026-06-06 10:44:46,074 [INFO] kmb: member_added — sanya3
+2026-06-06 10:45:48,890 [INFO] kmb: login_success
+2026-06-06 10:46:40,572 [INFO] kmb: login_success
+2026-06-06 10:46:49,433 [INFO] kmb: chat_created — новая
+2026-06-06 10:47:00,606 [INFO] kmb: member_added — sanya3
+2026-06-06 10:47:45,467 [INFO] kmb: password_changed
+2026-06-06 10:49:10,924 [INFO] kmb: login_success
+2026-06-06 10:54:36,189 [INFO] kmb: logout
+2026-06-06 10:54:48,767 [INFO] kmb: login_success
+2026-06-06 10:59:09,422 [INFO] kmb: user_registered — sanya6
+2026-06-06 11:02:37,212 [INFO] kmb: direct_chat_created — sanya6
+2026-06-06 11:04:10,317 [INFO] kmb: logout
+2026-06-06 11:04:16,350 [INFO] kmb: login_success
+2026-06-06 11:04:55,447 [INFO] kmb: login_success
+2026-06-06 11:04:59,878 [INFO] kmb: logout
+2026-06-06 11:05:09,845 [INFO] kmb: login_success
+2026-06-06 11:06:46,251 [INFO] kmb: logout
+2026-06-06 11:07:51,943 [INFO] kmb: login_success
+2026-06-06 18:34:24,780 [INFO] kmb: Database integrity check passed
+2026-06-06 18:34:24,782 [INFO] kmb: KMB backend started
+2026-06-06 18:34:48,870 [INFO] kmb: login_success — employee
+2026-06-06 18:35:42,300 [INFO] kmb: chat_created — дела дела
+2026-06-06 18:36:06,131 [INFO] kmb: chat_history_cleared — 18
+2026-06-06 18:36:11,558 [INFO] kmb: chat_history_cleared — 17
+2026-06-06 18:36:28,290 [INFO] kmb: chat_hidden — 18
+2026-06-06 18:36:48,161 [INFO] kmb: login_success — employee
+2026-06-06 18:37:02,389 [INFO] kmb: login_success — employee
+2026-06-06 18:37:09,603 [INFO] kmb: chat_created — qqq
+2026-06-06 18:37:13,308 [INFO] kmb: chat_hidden — 19
+2026-06-06 18:37:19,191 [INFO] kmb: chat_hidden — 17
+2026-06-06 18:37:32,023 [INFO] kmb: chat_created — qq
+2026-06-06 18:37:52,413 [INFO] kmb: logout
+2026-06-06 18:37:53,570 [INFO] kmb: login_success — employee
+2026-06-06 18:38:25,719 [INFO] kmb: logout
+2026-06-06 18:38:26,739 [INFO] kmb: login_success — employee
+2026-06-06 18:39:31,268 [INFO] kmb: logout
+2026-06-06 18:39:32,117 [INFO] kmb: login_success — employee
+2026-06-06 18:41:18,327 [INFO] kmb: logout
+2026-06-06 18:41:19,505 [INFO] kmb: login_success — employee
+2026-06-06 18:42:44,919 [INFO] kmb: login_success — employee
+2026-06-06 18:43:02,728 [INFO] kmb: chat_hidden — 20
+2026-06-06 11:44:24,940 [INFO] kmb: Database integrity check passed
+2026-06-06 11:44:24,941 [INFO] kmb: KMB backend started
+2026-06-06 18:44:26,783 [ERROR] kmb: Unhandled error on /users/status: (psycopg2.OperationalError) could not receive data from server: Software caused connection abort (0x00002745/10053)
+
+[SQL: SELECT users.id AS users_id, users.email AS users_email, users.username AS users_username, users.full_name AS users_full_name, users.hashed_password AS users_hashed_password, users.role AS users_role 
+FROM users 
+WHERE users.email = %(email_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'email_1': 'useruser5@test.com', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-06-06 18:44:31,923 [INFO] kmb: chat_hidden — 17
+2026-06-06 18:44:37,472 [INFO] kmb: direct_chat_created — sanya3
+2026-06-06 18:44:57,130 [INFO] kmb: chat_hidden — 21
+2026-06-06 18:45:03,676 [INFO] kmb: chat_created — привет
+2026-06-06 18:51:39,096 [INFO] kmb: logout
+2026-06-06 18:51:41,349 [INFO] kmb: login_success — admin
+2026-06-06 18:52:30,509 [INFO] kmb: login_success — employee
+2026-06-06 18:52:46,490 [INFO] kmb: chat_hidden — 16
+2026-06-06 18:52:52,431 [INFO] kmb: chat_hidden — 13
+2026-06-06 18:52:57,376 [INFO] kmb: chat_hidden — 11
+2026-06-06 18:53:01,547 [INFO] kmb: chat_hidden — 8
+2026-06-06 18:53:09,535 [INFO] kmb: direct_chat_created — sanya5
+2026-06-06 18:53:31,163 [INFO] kmb: login_success — employee
+2026-06-06 19:05:41,489 [ERROR] asyncio: Task exception was never retrieved
+future: <Task finished name='Task-11427' coro=<IocpProactor.accept.<locals>.accept_coro() done, defined at C:\Users\Александр\AppData\Local\Programs\Python\Python311\Lib\asyncio\windows_events.py:588> exception=OSError(22, 'Указанное сетевое имя более недоступно', None, 64, None)>
+Traceback (most recent call last):
+  File "C:\Users\Александр\AppData\Local\Programs\Python\Python311\Lib\asyncio\windows_events.py", line 591, in accept_coro
+    await future
+  File "C:\Users\Александр\AppData\Local\Programs\Python\Python311\Lib\asyncio\windows_events.py", line 837, in _poll
+    value = callback(transferred, key, ov)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Александр\AppData\Local\Programs\Python\Python311\Lib\asyncio\windows_events.py", line 580, in finish_accept
+    ov.getresult()
+OSError: [WinError 64] Указанное сетевое имя более недоступно
+2026-06-06 19:05:41,497 [ERROR] asyncio: Accept failed on a socket
+socket: <asyncio.TransportSocket fd=832, family=2, type=1, proto=6, laddr=('127.0.0.1', 8000)>
+Traceback (most recent call last):
+  File "C:\Users\Александр\AppData\Local\Programs\Python\Python311\Lib\asyncio\proactor_events.py", line 839, in loop
+    conn, addr = f.result()
+                 ^^^^^^^^^^
+OSError: [WinError 64] Указанное сетевое имя более недоступно
+2026-06-06 12:06:04,166 [INFO] kmb: Database integrity check passed
+2026-06-06 12:06:04,167 [INFO] kmb: KMB backend started
+2026-06-06 12:06:29,153 [INFO] kmb: login_success — employee
+2026-06-06 12:06:52,241 [INFO] kmb: chat_hidden — 14
+2026-06-06 12:07:21,188 [INFO] kmb: chat_hidden — 1
+2026-06-06 12:07:49,311 [INFO] kmb: login_success — employee
+2026-06-06 12:09:03,719 [INFO] kmb: chat_created — работная работа
+2026-06-06 12:09:39,956 [INFO] kmb: member_added — sanya3
+2026-06-06 12:09:44,259 [INFO] kmb: member_added — sanya4
+2026-06-06 12:11:54,258 [INFO] kmb: chat_hidden — 7
+2026-06-06 12:11:57,548 [INFO] kmb: chat_hidden — 6
+2026-06-06 12:12:00,523 [INFO] kmb: chat_hidden — 5
+2026-06-06 12:12:03,899 [INFO] kmb: chat_hidden — 4
+2026-06-06 12:12:07,545 [INFO] kmb: chat_hidden — 3
+2026-06-06 12:12:10,363 [INFO] kmb: chat_hidden — 2
+2026-06-06 12:12:13,161 [INFO] kmb: chat_hidden — 10
+2026-06-06 12:12:17,532 [INFO] kmb: chat_hidden — 12
+2026-06-06 12:12:38,441 [INFO] kmb: chat_history_cleared — 24
+2026-06-06 12:12:49,929 [INFO] kmb: chat_hidden — 24
+2026-06-06 12:16:33,625 [INFO] kmb: Database integrity check passed
+2026-06-06 12:16:33,625 [INFO] kmb: KMB backend started
+2026-06-06 12:21:04,530 [INFO] kmb: Database integrity check passed
+2026-06-06 12:21:04,531 [INFO] kmb: KMB backend started
+2026-06-06 12:22:02,933 [INFO] kmb: chat_created — тест1
+2026-06-06 12:22:13,132 [INFO] kmb: member_added — sanya5
+2026-06-06 12:22:59,180 [INFO] kmb: chat_hidden — 25
+2026-06-06 12:23:12,422 [INFO] kmb: chat_left — 25
+2026-06-06 12:35:06,006 [INFO] kmb: admin_changed — 4
+2026-06-06 12:41:01,678 [INFO] kmb: login_success — employee
+2026-06-06 12:41:56,031 [INFO] kmb: login_success — employee
+2026-06-06 12:41:59,185 [INFO] kmb: logout
+2026-06-06 12:42:02,392 [INFO] kmb: login_success — employee
+2026-06-06 12:42:21,778 [INFO] kmb: member_removed — 1
+2026-06-06 12:42:33,926 [INFO] kmb: chat_hidden — 25
+2026-06-06 12:42:41,308 [INFO] kmb: chat_created — тестовая
+2026-06-06 12:42:49,658 [INFO] kmb: member_added — sanya5
+2026-06-06 12:43:18,833 [INFO] kmb: member_removed — 4
+2026-06-06 12:43:36,332 [INFO] kmb: member_added — sanya5
+2026-06-06 12:43:43,958 [INFO] kmb: chat_left — 26
+2026-06-06 12:44:09,267 [INFO] kmb: chat_history_cleared — 26
+2026-06-06 12:44:21,908 [INFO] kmb: chat_hidden — 26
+2026-06-06 12:44:31,636 [INFO] kmb: member_removed — 4
+2026-06-06 13:00:29,424 [INFO] kmb: Database integrity check passed
+2026-06-06 13:00:29,425 [INFO] kmb: KMB backend started
+2026-06-06 13:00:37,090 [WARNING] kmb: login_failed — useruser4@test.com
+2026-06-06 13:00:39,440 [WARNING] kmb: login_failed — useruser4@test.com
+2026-06-06 13:00:43,087 [WARNING] kmb: login_failed — useruser5@test.com
+2026-06-06 13:01:10,511 [WARNING] kmb: login_failed — useruser3@test.com
+2026-06-06 13:06:41,967 [INFO] kmb: login_success — employee
+2026-06-06 13:06:45,444 [WARNING] kmb: login_failed — useruser5@test.com
+2026-06-06 13:06:48,816 [WARNING] kmb: login_failed — useruser5@test.com
+2026-06-06 13:06:53,887 [INFO] kmb: login_success — employee
+2026-06-06 13:06:58,958 [INFO] kmb: logout
+2026-06-06 13:07:00,683 [INFO] kmb: login_success — admin
+2026-06-06 13:07:31,540 [INFO] kmb: user_registered — sanya1
+2026-06-06 13:08:01,291 [INFO] kmb: login_success — employee
+2026-06-06 13:08:07,132 [INFO] kmb: direct_chat_created — sanya1
+2026-06-06 13:08:45,638 [INFO] kmb: chat_created — беседа 
+2026-06-06 13:09:03,285 [INFO] kmb: member_added — sanya5
+2026-06-06 13:10:05,956 [INFO] kmb: admin_changed — 1
+2026-06-06 13:10:15,554 [INFO] kmb: member_removed — 2
+2026-06-06 13:10:40,362 [INFO] kmb: member_added — sanya1
+2026-06-06 13:10:57,542 [INFO] kmb: admin_changed — 2
+2026-06-06 13:11:09,149 [INFO] kmb: admin_changed — 1
+2026-06-06 13:11:24,293 [INFO] kmb: chat_left — 2
+2026-06-06 13:23:10,018 [INFO] kmb: chat_created — qqq
+2026-06-06 13:23:26,215 [INFO] kmb: member_added — sanya5
+2026-06-06 13:23:52,409 [INFO] kmb: chat_hidden — 2
+2026-06-06 13:29:21,604 [INFO] kmb: password_changed
+2026-06-06 13:29:24,227 [INFO] kmb: logout
+2026-06-06 13:29:51,386 [WARNING] kmb: login_failed — kemeralex1@mail.ru
+2026-06-06 13:29:54,047 [INFO] kmb: login_success — employee
+2026-06-06 13:33:01,463 [INFO] kmb: user_registered — boriskin
+2026-06-06 13:34:11,602 [INFO] kmb: logout
+2026-06-06 13:34:15,566 [WARNING] kmb: login_failed — Борискин Александр Игоревич
+2026-06-06 13:34:19,289 [WARNING] kmb: login_failed — Борискин Александр Игоревич
+2026-06-06 13:34:24,217 [WARNING] kmb: login_failed — Борискин Александр Игоревич
+2026-06-06 13:34:30,969 [INFO] kmb: login_success — employee
+2026-06-06 13:34:37,731 [INFO] kmb: logout
+2026-06-06 13:34:40,171 [INFO] kmb: login_success — admin
+2026-06-06 13:34:44,159 [INFO] kmb: logout
+2026-06-06 13:34:51,758 [INFO] kmb: login_success — admin
+2026-06-06 13:34:57,490 [INFO] kmb: logout
+2026-06-06 13:35:14,573 [INFO] kmb: login_success — admin
+2026-06-06 13:36:41,836 [INFO] kmb: user_registered — tema
+2026-06-06 13:36:59,254 [WARNING] kmb: login_admin_denied
+2026-06-06 13:37:15,271 [WARNING] kmb: login_failed — tema@mail.ru
+2026-06-06 13:37:16,664 [WARNING] kmb: login_failed — tema@mail.ru
+2026-06-06 13:37:17,791 [WARNING] kmb: login_failed — tema@mail.ru
+2026-06-06 13:37:19,743 [WARNING] kmb: login_failed — tema@mail.ru
+2026-06-06 13:37:20,997 [WARNING] kmb: login_failed — tema@mail.ru
+2026-06-06 13:37:30,429 [INFO] kmb: login_success — employee
+2026-06-06 13:38:34,765 [INFO] kmb: user_registered — buh
+2026-06-06 13:38:39,134 [INFO] kmb: logout
+2026-06-06 13:38:53,119 [INFO] kmb: login_success — employee
+2026-06-06 13:39:05,012 [INFO] kmb: chat_created — бухгалтерия
+2026-06-06 13:39:11,024 [INFO] kmb: member_added — buh
+2026-06-06 13:39:23,966 [INFO] kmb: chat_history_cleared — 4
+2026-06-06 13:39:29,346 [INFO] kmb: chat_history_cleared — 4
+2026-06-06 13:41:44,740 [INFO] kmb: user_registered — diz
+2026-06-06 13:43:04,014 [WARNING] kmb: login_failed — Дизайнер Валера
+2026-06-06 14:14:16,963 [INFO] kmb: login_success — employee
+2026-06-06 14:14:18,348 [WARNING] kmb: login_failed — Дизайнер Валера
+2026-06-06 14:14:23,118 [INFO] kmb: login_success — admin
+2026-06-06 14:14:27,308 [INFO] kmb: logout
+2026-06-06 14:14:34,716 [WARNING] kmb: login_failed — Матафонов Артем Вячеславович
+2026-06-06 14:14:45,060 [INFO] kmb: login_success — employee
+2026-06-06 14:15:17,381 [INFO] kmb: chat_created — беседа
+2026-06-06 14:15:37,969 [INFO] kmb: member_added — sanya1
+2026-06-06 14:16:22,924 [INFO] kmb: member_added — tema
+2026-06-06 14:16:57,242 [INFO] kmb: logout
+2026-06-06 14:16:58,772 [INFO] kmb: logout
+2026-06-06 14:17:44,635 [WARNING] kmb: login_failed — sanya5
+2026-06-06 14:17:49,628 [WARNING] kmb: login_failed — sanya5
+2026-06-06 14:18:34,769 [WARNING] kmb: login_failed — sanya1
+2026-06-06 14:18:37,416 [WARNING] kmb: login_failed — sanya1
+2026-06-06 14:18:40,335 [INFO] kmb: login_success — employee
+2026-06-06 14:20:19,125 [INFO] kmb: logout
+2026-06-06 14:20:22,443 [WARNING] kmb: login_failed — sanya5
+2026-06-06 14:20:26,620 [WARNING] kmb: login_failed — sanya5
+2026-06-06 14:20:28,720 [WARNING] kmb: login_failed — sanya5
+2026-06-06 14:20:30,388 [INFO] kmb: login_success — admin
+2026-06-06 14:20:56,635 [WARNING] kmb: login_failed — sanya1
+2026-06-06 14:21:00,300 [WARNING] kmb: login_failed — sanya1
+2026-06-06 14:21:02,336 [WARNING] kmb: login_admin_denied
+2026-06-06 14:21:04,773 [INFO] kmb: login_success — employee
+2026-06-06 14:21:36,924 [INFO] kmb: direct_chat_created — boriskin
+2026-06-06 14:26:01,237 [INFO] kmb: logout
+2026-06-06 14:26:07,735 [INFO] kmb: login_success — admin
+2026-06-06 14:26:15,970 [INFO] kmb: direct_chat_created — buh
+2026-06-06 14:54:50,474 [INFO] kmb: logout
+2026-06-06 14:54:53,377 [INFO] kmb: login_success — employee
+2026-06-06 14:55:04,531 [INFO] kmb: member_removed — 4
+2026-06-06 14:55:05,075 [INFO] kmb: member_removed — 2
+2026-06-06 14:58:19,472 [INFO] kmb: message_deleted_for_me — 22
+2026-06-07 06:34:46,376 [INFO] kmb: login_success — employee
+2026-06-07 07:23:55,137 [INFO] kmb: login_success — employee
+2026-06-07 07:23:58,686 [INFO] kmb: chat_hidden — 5
+2026-06-07 07:24:01,871 [INFO] kmb: chat_hidden — 6
+2026-06-07 07:24:04,608 [INFO] kmb: chat_hidden — 7
+2026-06-07 07:24:07,513 [INFO] kmb: chat_hidden — 3
+2026-06-07 07:24:10,155 [INFO] kmb: chat_hidden — 1
+2026-06-07 07:24:13,557 [INFO] kmb: chat_hidden — 2
+2026-06-07 07:24:38,708 [INFO] kmb: chat_created — Коллеги
+2026-06-07 07:45:42,059 [INFO] kmb: chat_created — Групповой чат 
+2026-06-07 07:48:14,231 [INFO] kmb: chat_hidden — 9
+2026-06-07 07:48:17,099 [INFO] kmb: chat_hidden — 8
+2026-06-07 07:48:54,832 [INFO] kmb: chat_created — Собрание
+2026-06-07 07:50:56,238 [INFO] kmb: member_added — sanya1
+2026-06-07 07:52:52,571 [INFO] kmb: admin_changed — 2
+2026-06-07 07:53:40,547 [INFO] kmb: chat_left — 10
+2026-06-07 07:54:09,863 [INFO] kmb: login_success — employee
+2026-06-07 07:54:14,101 [INFO] kmb: chat_hidden — 10
+2026-06-07 07:58:02,078 [INFO] kmb: chat_created — Беседа
+2026-06-07 07:58:05,577 [INFO] kmb: login_success — employee
+2026-06-07 07:58:13,030 [INFO] kmb: member_added — sanya1
+2026-06-07 07:58:33,783 [INFO] kmb: message_deleted_for_me — 35
+2026-06-07 07:58:35,715 [INFO] kmb: message_deleted_for_me — 35
+2026-06-07 08:01:23,297 [INFO] kmb: message_deleted_for_me — 35
+2026-06-07 08:07:31,240 [INFO] kmb: admin_changed — 2
+2026-06-07 08:08:28,332 [INFO] kmb: logout
+2026-06-07 08:08:43,910 [INFO] kmb: login_success — admin
+2026-06-07 08:09:54,104 [INFO] kmb: user_registered — boris

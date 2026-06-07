@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WebSocket Chat Test</title>
+</head>
+<body>
+
+<h1>WebSocket Chat</h1>
+
+<input id="messageInput" type="text">
+<button onclick="sendMessage()">
+    Send
+</button>
+
+<ul id="messages"></ul>
+
+<script>
+    const token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZXN0MkBtYWlsLmNvbSIsImV4cCI6MTc4MDA1ODg0MX0.2wpHdqaUfoWDiRQnVcQJv9CpLiX2Rek85sH8rpSFZoM";
+
+    const ws = new WebSocket(
+        `ws://localhost:8000/ws/1?token=${token}`
+    );
+    ws.onmessage = function(event) {
+        const messages = document.getElementById("messages");
+
+        const li = document.createElement("li");
+
+        li.textContent = event.data;
+
+        messages.appendChild(li);
+    };
+
+    function sendMessage() {
+        const input = document.getElementById("messageInput");
+
+        ws.send(JSON.stringify({
+            user: "test",
+            message: input.value
+        }));
+
+        input.value = "";
+    }
+</script>
+
+</body>
+</html>
