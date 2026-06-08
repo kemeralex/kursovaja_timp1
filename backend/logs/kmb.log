@@ -526,3 +526,66 @@ OSError: [WinError 64] Указанное сетевое имя более не�
 2026-06-07 08:08:28,332 [INFO] kmb: logout
 2026-06-07 08:08:43,910 [INFO] kmb: login_success — admin
 2026-06-07 08:09:54,104 [INFO] kmb: user_registered — boris
+2026-06-08 07:50:12,799 [WARNING] kmb: Integrity check: 1 messages without chat membership
+2026-06-08 07:50:12,804 [WARNING] kmb: Database integrity check completed with warnings
+2026-06-08 07:50:12,805 [INFO] kmb: KMB backend started
+2026-06-08 07:57:41,986 [WARNING] kmb: Integrity check: 1 messages without chat membership
+2026-06-08 07:57:41,990 [WARNING] kmb: Database integrity check completed with warnings
+2026-06-08 07:57:41,991 [INFO] kmb: KMB backend started
+2026-06-08 08:00:08,624 [INFO] kmb: login_success — employee
+2026-06-08 08:05:20,686 [WARNING] kmb: Integrity check: 1 messages without chat membership
+2026-06-08 08:05:20,689 [WARNING] kmb: Database integrity check completed with warnings
+2026-06-08 08:05:20,689 [INFO] kmb: KMB backend started
+2026-06-08 08:06:59,685 [WARNING] kmb: Integrity check: 1 messages without chat membership
+2026-06-08 08:06:59,690 [WARNING] kmb: Database integrity check completed with warnings
+2026-06-08 08:06:59,690 [INFO] kmb: KMB backend started
+2026-06-08 08:11:42,542 [WARNING] kmb: Integrity check: 1 messages without chat membership
+2026-06-08 08:11:42,545 [WARNING] kmb: Database integrity check completed with warnings
+2026-06-08 08:11:42,546 [INFO] kmb: KMB backend started
+2026-06-08 08:15:14,267 [WARNING] kmb: Integrity check: 1 messages without chat membership
+2026-06-08 08:15:14,271 [WARNING] kmb: Database integrity check completed with warnings
+2026-06-08 08:15:14,272 [INFO] kmb: KMB backend started
+2026-06-08 08:17:27,391 [WARNING] kmb: Integrity check: 1 messages without chat membership
+2026-06-08 08:17:27,396 [WARNING] kmb: Database integrity check completed with warnings
+2026-06-08 08:17:27,397 [INFO] kmb: KMB backend started
+2026-06-08 08:21:05,703 [WARNING] kmb: Integrity check: 1 messages without chat membership
+2026-06-08 08:21:05,706 [WARNING] kmb: Database integrity check completed with warnings
+2026-06-08 08:21:05,707 [INFO] kmb: KMB backend started
+2026-06-08 08:24:05,528 [WARNING] kmb: Integrity check: 1 messages without chat membership
+2026-06-08 08:24:05,531 [WARNING] kmb: Database integrity check completed with warnings
+2026-06-08 08:24:05,532 [INFO] kmb: KMB backend started
+2026-06-08 08:25:17,367 [INFO] kmb: logout
+2026-06-08 08:25:18,213 [INFO] kmb: login_success — employee
+2026-06-08 08:36:34,785 [WARNING] kmb: Integrity check: 1 messages without chat membership
+2026-06-08 08:36:34,789 [WARNING] kmb: Database integrity check completed with warnings
+2026-06-08 08:36:34,789 [INFO] kmb: KMB backend started
+2026-06-08 08:40:38,433 [WARNING] kmb: Integrity check: 1 messages without chat membership
+2026-06-08 08:40:38,437 [WARNING] kmb: Database integrity check completed with warnings
+2026-06-08 08:40:38,438 [INFO] kmb: KMB backend started
+2026-06-08 08:43:04,261 [WARNING] kmb: Integrity check: 1 messages without chat membership
+2026-06-08 08:43:04,264 [WARNING] kmb: Database integrity check completed with warnings
+2026-06-08 08:43:04,265 [INFO] kmb: KMB backend started
+2026-06-08 08:43:53,895 [INFO] kmb: Database integrity check passed
+2026-06-08 08:43:53,896 [INFO] kmb: KMB backend started
+2026-06-08 08:44:39,338 [INFO] kmb: login_success — employee
+2026-06-08 08:44:45,485 [WARNING] kmb: login_failed — sanya5
+2026-06-08 08:44:49,645 [INFO] kmb: login_success — admin
+2026-06-08 08:45:59,631 [INFO] kmb: Database integrity check passed
+2026-06-08 08:45:59,632 [INFO] kmb: KMB backend started
+2026-06-08 08:52:50,311 [INFO] kmb: Database integrity check passed
+2026-06-08 08:52:50,312 [INFO] kmb: KMB backend started
+2026-06-08 09:01:46,542 [INFO] kmb: Database integrity check passed
+2026-06-08 09:01:46,543 [INFO] kmb: KMB backend started
+2026-06-08 09:11:59,722 [INFO] kmb: Database integrity check passed
+2026-06-08 09:11:59,722 [INFO] kmb: KMB backend started
+2026-06-08 09:17:08,470 [INFO] kmb: Database integrity check passed
+2026-06-08 09:17:08,471 [INFO] kmb: KMB backend started
+2026-06-08 09:21:00,592 [INFO] kmb: Database integrity check passed
+2026-06-08 09:21:00,593 [INFO] kmb: KMB backend started
+2026-06-08 09:23:42,324 [INFO] kmb: Database integrity check passed
+2026-06-08 09:23:42,325 [INFO] kmb: KMB backend started
+2026-06-08 09:30:59,121 [INFO] kmb: Database integrity check passed
+2026-06-08 09:30:59,121 [INFO] kmb: KMB backend started
+2026-06-08 09:31:33,789 [INFO] kmb: Database integrity check passed
+2026-06-08 09:31:33,789 [INFO] kmb: KMB backend started
+2026-06-08 09:31:48,879 [INFO] kmb: login_success — employee
